@@ -7,19 +7,26 @@ function App() {
   return (
     <div className="App">
       <div className="background-title">
-        <h1 className="background-title-h1">
+        <h1>
           ミズキイ
         </h1>
       </div>
-      <header className="App-header">
-        <img src={heroo} className="App-logo" alt="logo" />
-        <div className="title">
-          <h1 className="App-link">
+      <div className="background-marquee">
+        <marquee direction="down">
+          <p>
+            ミズキイ・ミズキイ・ミズキイ・ミズキイ・ミズキイ・ミズキイ・ミズキイ・ミズキイ・ミズキイ・ミズキイ・ミズキイ
+          </p>
+        </marquee>
+      </div>
+      <div className="content">
+        <img src={heroo} className="heroo" />
+        <div className="title-container">
+          <h1>
             ミズキイ　アップ
           </h1>
         </div>
         <Button />
-      </header>
+      </div>
     </div>
   );
 }

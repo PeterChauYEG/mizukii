@@ -1,35 +1,29 @@
 html {
   cursor: url(https://vignette.wikia.nocookie.net/pro/images/8/82/Poring.gif/revision/latest?cb=20100302113131), pointer;
+  background-color: #ffb0f2;
 }
 
 .App {
   text-align: center;
 }
 
-.App-logo {
+.heroo {
   height: 40vmin;
   pointer-events: none;
   transform: rotate(90deg);
   padding-top: 50vw;
 }
 
-.body {
+.button {
   margin-top: 15vh;
-  background-color: #ffb0f2;
   padding: 0 10px;
   border-color: white;
   border-width: 10px;
   border-style: dotted;
 }
 
-.body:hover {
+.button:hover {
   border-style: double;
-}
-
-.title {
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
 }
 
 .background-title {
@@ -38,7 +32,7 @@ html {
   right: 0;
 }
 
-.background-title-h1 {
+.background-title h1 {
   margin: 0;
   color: #fff;
   text-shadow: 5px 6px 2px #ff00afa3;
@@ -47,7 +41,28 @@ html {
   text-orientation: upright;
 }
 
-.App-header {
+.background-marquee {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.background-marquee marquee{
+  height: 100vh;
+}
+
+.background-marquee p {
+  margin: 0;
+  color: #fff;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.background-marquee p:hover {
+  color: #ff00afa3;
+}
+
+.content {
   background-color:#ffb0f2;
   min-height: 100vh;
   display: flex;
@@ -58,7 +73,13 @@ html {
   color: white;
 }
 
-.App-link {
+.title-container {
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.title-container h1 {
   color: #ff00afa3;
   text-shadow: 5px 6px 2px #fff;
 }
